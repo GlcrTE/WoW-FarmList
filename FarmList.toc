@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: FarmList
+## Notes: Simple farming checklist: enter items and target amounts, counts what you gather (selling or using items does not reduce progress). Shows what the missing amount would cost on the AH if TSM is loaded.
+## Author: Glacier94
+## Version: 1.1
+## OptionalDeps: TradeSkillMaster
+## SavedVariables: FarmListDB
+## SavedVariablesPerCharacter: FarmListCharDB
+
+FarmList.lua
