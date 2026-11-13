@@ -6,13 +6,16 @@ Kleine Farmliste für WoW Forever: Items mit Zielmenge eintragen, die Liste zäh
 
 - **Nur was neu dazukommt, zählt.** Brauchst du 500 und sammelst 100, steht dort `100 / 500`. Auch wenn du die 100 danach verkaufst oder verbraucht, bleibt es bei 100.
 - Was beim Hinzufügen schon in Taschen oder Bank liegt, zählt nicht. Mit `/farm set [Item] 50` oder Strg + Mausrad trägst du vorhandene Items von Hand nach.
-- **Nicht gezählt** wird, was du bei offener Post, Auktionshaus, Händler, Handel oder Bank bekommst. Das ist nicht gefarmt.
+- **Gekauftes zählt:** Händlerkäufe und AH-Käufe. AH-Käufe kommen per Post. Aus der Post zählen nur die Gegenstände aus AH-Kaufbriefen.
+- **Nicht gezählt** wird, was du sonst aus der Post holst (z. B. von Twinks), per Handel oder bei offener Bank bekommst, und was du beim Händler zurückkaufst.
 - Bank und Taschen werden zusammen gezählt. Einlagern oder Abheben verändert den Fortschritt also nicht.
 - Was du herstellst, zählt (z. B. Barren aus dem Schmelzen).
 
 ## Bedienung
 
-- **Hinzufügen:** Item ins Fenster ziehen (Ziel 20) oder `/farm add [Item] 500`. Item per Shift-Klick verlinken, oder ID bzw. Name angeben.
+- **Hinzufügen:** Item ins Fenster ziehen (Ziel 20) oder `/farm magiestoff 500` (kurz für `/farm add magiestoff 500`). Statt des Namens geht auch ein Shift-Klick-Link oder die Item-ID.
+- **Namen:** Die Grundmaterialien aller Berufe (Stoff, Erz, Barren, Steine, Edelsteine, Kräuter, Leder und Schuppen, Verzauberungsmaterial, Elemente, Fisch, Fleisch) sind eingebaut und gehen ohne Link, auf Deutsch oder Englisch. Groß-/Kleinschreibung ist egal, Umlaute dürfen als ae/oe/ue/ss geschrieben werden, ein Namensanfang reicht (`/farm leinen`). Passt der Text auf mehrere Items, listet FarmList sie auf.
+- **Mausrad freischalten:** Haken bei „Mausrad“ oben im Fenster. Ohne Haken ändert Scrollen über der Liste nichts (Standard), das Mausrad zoomt dann wie gewohnt die Kamera.
 - **Ziel ändern:** Mausrad über der Zeile, ±1 (mit Shift ±10).
 - **Fortschritt korrigieren:** Strg + Mausrad, ±1 (mit Shift ±10).
 - **Entfernen:** Rechtsklick auf die Zeile.
@@ -21,7 +24,9 @@ Kleine Farmliste für WoW Forever: Items mit Zielmenge eintragen, die Liste zäh
 | Befehl | Wirkung |
 |---|---|
 | `/farm` | Fenster an/aus |
+| `/farm [Item] [Anzahl]` | Kurzform von `add` |
 | `/farm add [Item] [Anzahl]` | Item hinzufügen oder Ziel setzen |
+| `/farm help` | Befehlsübersicht im Chat |
 | `/farm set [Item] [Anzahl]` | Fortschritt von Hand setzen |
 | `/farm reset [Item]` | Fortschritt auf 0 (ohne Item: alle) |
 | `/farm remove [Item]` | Item entfernen |
